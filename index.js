@@ -5,7 +5,7 @@ function lowerCaseDrivers(){
     return x.toLowerCase()
   });
 }
-function nameToAttributes(){
+function nameToAttributes(drivers){
   return drivers.map(function(x){
     let driverName= x.split(" ")
     return Object.assign({}, {firstName:driverName[0]}, {lastName: driverName[1]});
