@@ -6,12 +6,10 @@ function lowerCaseDrivers(){
   });
 }
 function nameToAttributes(){
-  return drivers.split(" ").map(function(x){
-    return "firstName: " +drivers[0]+ " lastName: "+drivers[1]
-
-  })
-
-
+  return drivers.map(function(x){
+    let driverName= x.split(" ")
+    return Object.assign({}, {firstName:driverName[0]}, {lastName: driverName[1]});
+  });
 }
 function attributesToPhrase(){
   return drivers.map(function(driver){
