@@ -1,6 +1,6 @@
 // Code your solution in this file.
 let drivers = ['bobby', 'sammy', 'sally', 'annette', 'sarah', 'bobby']
-var lowerCaseDrivers = drivers.map(function(x){
+var lowerCaseDrivers = return drivers.map(function(x){
     return x.name.toLowerCase()
   });
 
