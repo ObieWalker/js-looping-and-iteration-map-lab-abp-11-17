@@ -1,9 +1,9 @@
 // Code your solution in this file.
 let drivers = ['Bobby', 'sammy', 'sally', 'annette', 'sarah', 'bobby']
-let lowerCaseDrivers = drivers.map(function(x){
+function lowerCaseDrivers(){ drivers.map(function(x){
     return x.toLowerCase()
   });
-
+}
 function nameToAttributes(drivers){
   let driverNames = drivers.split(" ")
   
