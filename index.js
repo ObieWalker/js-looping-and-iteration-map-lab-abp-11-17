@@ -10,6 +10,7 @@ function nameToAttributes(drivers){
 
 
 }
-var attributesToPhrase = drivers.map(function(driver){
+var attributesToPhrase(){
+  return drivers.map(function(driver){
   return driver.name+" is from "+driver.hometown
 });
